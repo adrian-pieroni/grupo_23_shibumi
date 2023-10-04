@@ -1,0 +1,24 @@
+ESTILOS Y FUENTES
+- Títulos <h1>
+- Títulos <h2>
+- Títulos <h3>
+- Títulos <h4>
+- Textos
+
+
+PALETA DE COLORES
+- header{background-color: #ffb797} naranja claro
+- footer{background-color: #ffb797;} naranja claro
+- Color de fondo generral de páginas: {background-color: #f0f0f0;} gris claro
+
+- Color de contenecores:
+- Color de padding:
+- Color de border:
+- Color de margin:
+
+
+MEDIA QUERIES
+Estrategia de diseño "mobile first"
+- Desk tops: 1680 x 1050
+- Tablets: 1024 x 768
+- Smart phones: 320 x 480

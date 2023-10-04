@@ -1,0 +1,39 @@
+/*PALETA DE COLORES*/
+
+header{
+    background-color: #ffb797;
+
+
+  
+    
+}
+
+footer{
+    background-color: #ffb797;
+    
+}
+
+
+form{
+    background-color: #f0f0f0;
+    
+}
+
+
+
+/*Esto debe quedar al final del .CSS*/
+ /*Defino los estilos para que se adapte en cada viewport*/
+
+/*Defino los estilos para escritorio*/
+
+   @media screen and (min-width: 480px){
+    header{
+        background-color:;
+    }
+}
+
+@media screen and (min-width: 480px) and (orientation:landscape) {
+    header{
+        background-color:;
+    }
+}
