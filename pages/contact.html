@@ -4,82 +4,108 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contacto</title>
-    <link rel="icon" href="../assets/icons/logo_head-1.ico">
-    <link rel="stylesheet" href="../assets/">
+    <link rel="icon" href="../assets/icons/logo_head-1.ico" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-   
-   
   </head>
   <body>
     <header>
-      <img src="../assets/images/logo_header-1.jpg"  alt="Tu imagen de perfil">
-      
-        <nav>
-          <ul>
-            <li>Busqueda</li>
-            <li><a href="./cart.html">Carrito</a></li>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">Quienes somos</a></li>
-            <li><a href="./products.html">Productos</a></li>
-            <li><a href="./contact.html">Contaco</a></li>
-          </ul>
-        </nav>
-      </header>
+      <div class="grid-container">
+        <div class="logo-header">
+          <img src="../assets/images/logo_header-1.jpg" width="300px"
+height=140"  alt="logo-header">
+          
+        </div>
+        <div class="nav-header">
+          <nav>
+            <ul>
+              <li>Busqueda</li>
+              <li><a href="./cart.html">Carrito</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">Quienes somos</a></li>
+              <li><a href="./products.html">Productos</a></li>
+              <li><a href="./contact.html">Contaco</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="nombre-01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre-01alue="" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+      <div class="col-md-4">
+        <label for="nombre-01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre-01alue="" required>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <label for="apellido-01" class="form-label">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="apellido-01"
+          value=""
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <label for="email-01" class="form-label">Email</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input
+            type="text"
+            class="form-control"
+            id="email-01"
+            aria-describedby="inputGroupPrepend"
+            required
+          />
+          <div class="invalid-feedback">Please choose a email.</div>
         </div>
-        <div class="col-md-4">
-          <label for="apellido-01" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="apellido-01" value="" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="email-01" class="form-label">Email</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="email-01" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a email.
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <div class="mb-3">
-            <label for="mensaje-01" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje-01" rows="3"></textarea>
-          </div>
-        
-        
-        
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Estoy de acuerdo con los téminos y condiciones.
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
+      <div class="mb-3">
+        <label for="mensaje-01" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje-01" rows="3"></textarea>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck">
+            Estoy de acuerdo con los téminos y condiciones.
+          </label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
         </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar formulario</button>
-        </div>
-      </form>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <footer>
+      <p>G_23 </p>
+    <p>&#169 Copyright 2023 Todos los derechos reservados</p>
+    <img class="icono-footer" src="../assets/icons/social_facebook_fb_35.png"">
+    <img class="icono-footer" src="../assets/icons/social_instagram_3.png" >
+    <img class="icono-footer" src="../assets/icons/social_Pinterest_8 (1).png" >
+    <img class="icono-footer" src="../assets/icons/sociallinkedin_member_70.png" >
+
+    </footer>
   </body>
 </html>
