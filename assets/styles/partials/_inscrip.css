@@ -1,0 +1,41 @@
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap;
+  /*font-size: 70px;*/
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../fonts/Barlow-Medium.ttf") format("truetype");
+}
+
+.isotipo {
+  height: 120px;
+  width: auto;
+}
+
+header {
+  font-family: Barlow;
+  text-align: center; /* Center-align content horizontally */
+}
+
+h1 {
+  font-family: Barlow-Medium;
+  color: #7d7d7d;
+  font-size: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Center-align content vertically */
+  justify-content: center; /* Center-align content horizontally */
+}
+.container > div {
+  line-height: 90px;
+}
+.isotipo,
+.centered-title {
+  margin: 0; /* Remove any default margins */
+  color: #7d7d7d;
+  font-size: 70px;
+}
