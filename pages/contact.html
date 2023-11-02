@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    
     <header class="head-menu">
       <div class="encabezado logo-nav">
         <img src="../assets/images/logo_header-1.png" style="float: left;" alt="Logo Estudio Aclif" height="100" width="300">
@@ -32,36 +33,33 @@
           </div>
       </div>
   </header>
-  
-    <form class="row g-3 needs-validation" novalidate>
+  <section>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-9"></div>
+ 
+    <form class="row g-3 needs-validation" action="" method="GET">
       <div class="col-md-4">
-        <label for="nombre-01" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre-01alue="" required>
-        <div class="valid-feedback">Looks good!</div>
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" name required>
+      
       </div>
       <div class="col-md-4">
-        <label for="apellido-01" class="form-label">Apellido</label>
-        <input
-          type="text"
-          class="form-control"
-          id="apellido-01"
-          value=""
-          required
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name required
         />
-        <div class="valid-feedback">Looks good!</div>
+
       </div>
+      <p></p>
       <div class="col-md-4">
-        <label for="email-01" class="form-label">Email</label>
+        <label for="validationCustomUserName" class="form-label">Email</label>
         <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input
-            type="text"
-            class="form-control"
-            id="email-01"
+     
+          <input type="email" class="form-control" id="validationCustomUserName"
             aria-describedby="inputGroupPrepend"
-            required
-          />
-          <div class="invalid-feedback">Please choose a email.</div>
+            required>
+       
         </div>
       </div>
 
@@ -95,6 +93,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    </div>
+  </div>
+</section>
 
     <footer>
       <div class="img_footer">
