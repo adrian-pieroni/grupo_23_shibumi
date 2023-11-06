@@ -1,22 +1,44 @@
-/* barlow-regular - latin */
-@font-face {
-  font-display: swap;
-  /*font-size: 70px;*/
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 200;
-  src: url("../../fonts/Barlow-Medium.ttf") format("truetype");
+.isotipo {
+  /*background-color: aquamarine;*/
+height:5vw;
+
 }
 
-.isotipo {
-  height: 120px;
-  width: auto;
+input, select {
+  /*display: flex;*/
+  border-radius: 5px;
+  background-color:rgb(250, 252, 246);
+  margin: 10px;
+  padding: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  
 }
 
 header {
-  font-family: Barlow;
-  text-align: center; /* Center-align content horizontally */
+  display: flex;
+  justify-content: center;
+  
 }
+
+div {
+  /*display: flex;*/
+  justify-content: center;
+  font-family: 'Barlow', sans-serif;
+}
+
+/*div>label{
+  display: flex;
+  text-align:left;
+}*/
+
+/*.isotipo {
+  height: 100px;
+  width: auto;
+}*/
+
+
 
 h1 {
   font-family: Barlow-Medium;
@@ -25,17 +47,30 @@ h1 {
   text-align: center;
 }
 
-.container {
-  display: flex;
-  align-items: flex-start; /* Center-align content vertically */
-  justify-content: center; /* Center-align content horizontally */
-}
-.container > div {
-  line-height: 90px;
-}
+
 .isotipo,
 .centered-title {
   margin: 0; /* Remove any default margins */
   color: #7d7d7d;
   font-size: 70px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }

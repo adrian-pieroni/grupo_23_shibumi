@@ -9,6 +9,14 @@
       type="text/css"
       href="../assets/styles/partials/_inscrip.css"
     />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/grupo_23_shibumi/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/grupo_23_shibumi/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/grupo_23_shibumi/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/grupo_23_shibumi/assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/grupo_23_shibumi/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
@@ -21,61 +29,95 @@
     </header>
 
     <main>
-      <h1>Esto es para probar</h1>
-      <form name="formulario" method="post" action="procesar.php">
-        <p>
-          <label for="nombre">Nombre:</label
-          ><input
+      <form method="post" action="procesar.php">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
             type="text"
             name="nombre"
+            id="nombre"
             minlength="3"
             required
             maxlength="25"
+            size="25"
           />
-          <label for="apellido">Apellido:</label
-          ><input
+        </div>
+
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input
             type="text"
             name="apellido"
+            id="apellido"
             minlength="3"
             required
             maxlength="25"
+            size="25"
           />
-        </p>
-        <p>
-          <label for="edad">Fecha de nacimiento:</label
-          ><input type="date" name="edad" min="13" required />
-        </p>
-        <p>
-          <label for="calle">Calle:</label
-          ><input
+        </div>
+
+        <div>
+          <label for="edad">Fecha de nacimiento:</label>
+          <input type="date" name="edad" id="edad" min="13" required />
+        </div>
+
+        <div>
+          <label for="calle">Calle:</label>
+          <input
             type="text"
             name="calle"
+            id="calle"
             minlength="3"
             required
             maxlength="25"
+            size="25"
           />
-          <label for="numero">Número:</label
-          ><input type="number" name="numero" min="0" required max="100000" />
-        </p>
-        <p>
-          <label for="ciudad">Ciudad:</label
-          ><input type="text" name="ciudad" required />
-        </p>
-        <p>
-          <label for="provincia">Provincia:</label
-          ><input type="text" name="provincia" required />
-        </p>
-        <p>
-          <label for="pais">País:</label
-          ><input type="text" name="pais" required />
-        </p>
-        <p>
-          <label for="codpos">Código Postal:</label
-          ><input type="number" name="codpos" min="1000" required />
-        </p>
-        <p>
-          <label for="prefer">Preferencia temática:</label
-          ><select name="prefer" id="preferencia" required>
+
+          <label for="numero">Número:</label>
+          <input
+            type="number"
+            name="numero"
+            id="numero"
+            min="0"
+            required
+            max="100000"
+            size="6"
+          />
+        </div>
+
+        <div>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad" required size="25" />
+        </div>
+
+        <div>
+          <label for="provincia">Provincia:</label>
+          <input type="text" name="provincia" id="provincia" required />
+
+          <label for="pais">País:</label>
+          <input type="text" name="pais" id="pais" required />
+        </div>
+
+        <div>
+          <label for="codpos">Código Postal:</label>
+          <input type="number" name="codpos" id="codpos" min="1000" required />
+        </div>
+
+        <div>
+          <label for="tel">Teléfono:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="formato: 000-000-0000"
+          />
+        </div>
+
+        <div>
+          <label for="prefer">Preferencia temática:</label>
+          <select name="prefer" id="prefer" required>
             <option value="">--Por favor elija una opción--</option>
             <option
               value="1"
@@ -114,7 +156,7 @@
               Manga FCFRA
             </option>
           </select>
-        </p>
+        </div>
 
         <p><input type="submit" /></p>
       </form>
