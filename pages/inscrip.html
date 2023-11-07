@@ -4,84 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shibumi</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assets/styles/partials/_inscrip.css"
-    />
+    <link rel="stylesheet" type="text/css" href="/assets/styles/partials/_inscrip.css" />
 
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/grupo_23_shibumi/assets/icons/logo_head-1.ico"
+      href="/assets/icons/logo_head-1.ico"
     />
   </head>
 
   <body>
     <header>
-      <img
-        class="isotipo"
-        src="../assets/images/logo_header-1.png"
-        alt="isotipo"
-      />
+      <img class="isotipo" src="/assets/images/logo_header-1.png" alt="isotipo" />
     </header>
 
     <main>
       <form method="post" action="procesar.php">
-        <div>
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            minlength="3"
-            required
-            maxlength="25"
-            size="25"
-          />
-        </div>
 
-        <div>
-          <label for="apellido">Apellido:</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            minlength="3"
-            required
-            maxlength="25"
-            size="25"
-          />
+        <div class="linea">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              minlength="3"
+              required
+              maxlength="25"
+              size="25"
+            />
+          </div>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              minlength="3"
+              required
+              maxlength="25"
+              size="25"
+            />
+          </div>  
         </div>
-
-        <div>
-          <label for="edad">Fecha de nacimiento:</label>
-          <input type="date" name="edad" id="edad" min="13" required />
+        <div></div>
+        <div class="linea">
+          <div>
+            <label for="edad">Fecha de nacimiento:</label>
+            <input type="date" name="edad" id="edad" min="13" required size="25"/>
+          </div>
         </div>
+      
 
-        <div>
+        <div class="linea">
+          <div>
           <label for="calle">Calle:</label>
           <input
-            type="text"
-            name="calle"
-            id="calle"
-            minlength="3"
-            required
-            maxlength="25"
-            size="25"
-          />
+              type="text"
+              name="calle"
+              id="calle"
+              minlength="3"
+              required
+              maxlength="25"
+              size="25"
+            />
+          </div>
 
-          <label for="numero">Número:</label>
-          <input
-            type="number"
-            name="numero"
-            id="numero"
-            min="0"
-            required
-            max="100000"
-            size="6"
-          />
+          <div>
+            <label for="numero">Número:</label>
+            <input
+              type="number"
+              name="numero"
+              id="numero"
+              min="0"
+              required
+              max="100000"
+              size="6"
+            />
+          </div>
         </div>
 
         <div>
@@ -155,11 +156,22 @@
               Manga FCFRA
             </option>
           </select>
-        </div>
+        </div>-->
 
         <p><input type="submit" /></p>
       </form>
     </main>
-    <footer>&copy; Derechos Reservados 2023</footer>
+    <footer>
+      <div class="img_footer">
+        <img src="../assets/images/logo_header-1.png" style="align-content: center;" alt="Logo Estudio Aclif" height="33" width="120">
+      </div>
+      <p>G_23 </p>
+    <p>&#169 Copyright 2023 Todos los derechos reservados</p>
+    <img class="icono-footer" src="../assets/icons/social_facebook_fb_35.png"">
+    <img class="icono-footer" src="../assets/icons/social_instagram_3.png" >
+    <img class="icono-footer" src="../assets/icons/social_Pinterest_8 (1).png" >
+    <img class="icono-footer" src="../assets/icons/sociallinkedin_member_70.png" >
+
+    </footer>
   </body>
 </html>
