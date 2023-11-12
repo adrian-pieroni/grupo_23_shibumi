@@ -1,130 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shibumi</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/partials/_inscrip.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/styles/partials/_inscrip.css"
+    />
 
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/logo_head-1.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/logo_head-1.ico"
+    />
   </head>
 
   <body>
     <header>
-      <img class="isotipo" src="/assets/images/logo_header-1.png" alt="isotipo" />
+      <img
+        class="isotipo"
+        src="/assets/images/logo_header-1.png"
+        alt="isotipo"
+      />
     </header>
 
     <main>
-      <form method="post" action="procesar.php">
-
+      <h3>Formulario de Registro</h3>
+      <form id="registro" method="post" action="procesar.php">
         <div class="linea">
-          <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" minlength="3" required maxlength="25" size="25" />
-          </div>
-          <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" minlength="3" required maxlength="25" size="25" />
-          </div>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            minlength="3"
+            required
+            maxlength="25"
+            size="20"
+          />
         </div>
-        <div></div>
         <div class="linea">
-          <div>
-            <label for="edad">Fecha de nacimiento:</label>
-            <input type="date" name="edad" id="edad" min="13" required size="25" />
-          </div>
-        </div>
-
-
-        <div class="linea">
-          <div>
-            <label for="calle">Calle:</label>
-            <input type="text" name="calle" id="calle" minlength="3" required maxlength="25" size="25" />
-          </div>
-
-          <div>
-            <label for="numero">Número:</label>
-            <input type="number" name="numero" id="numero" min="0" required max="100000" size="6" />
-          </div>
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Apellido"
+            minlength="3"
+            required
+            maxlength="25"
+            size="20"
+          />
         </div>
 
         <div class="linea">
-          <div>
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" name="ciudad" id="ciudad" required size="25" />
-          </div>
-
-          <div>
-            <label for="provincia">Provincia:</label>
-            <input type="text" name="provincia" id="provincia" required />
-          </div>
+          <label for="edad">Edad:</label>
+          <input
+            type="text"
+            name="edad"
+            id="edad"
+            placeholder="Edad"
+            required
+            title="Edad"
+            size="20"
+          />
         </div>
 
         <div class="linea">
-          <div>
-            <label for="pais">País:</label>
-            <input type="text" name="pais" id="pais" required />
-          </div>
-
-          <div>
-            <label for="codpos">Código Postal:</label>
-            <input type="number" name="codpos" id="codpos" min="1000" required />
-          </div>
+          <label for="calle">Calle:</label>
+          <input
+            type="text"
+            name="calle"
+            id="calle"
+            placeholder="Calle"
+            minlength="3"
+            required
+            maxlength="25"
+            size="20"
+          />
         </div>
 
         <div class="linea">
-          <div>
-            <label for="tel">Teléfono:</label>
-            <input type="tel" name="tel" id="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              title="formato: 000-000-0000" />
-          </div>
+          <label for="numero">Número:</label>
+          <input
+            type="number"
+            name="numero"
+            id="numero"
+            placeholder="Numero"
+            min="0"
+            required
+            max="100000"
+            size="6"
+          />
         </div>
 
         <div class="linea">
-          <div>
-            <label for="prefer">Preferencia temática:</label>
-            <select name="prefer" id="prefer" required>
-              <option value="">--Por favor elija una opción--</option>
-              <option value="1" title="Manga para publico masculino joven: acción, aventura, amistad.">
-                Shonen
-              </option>
-              <option value="2" title="Manga para público femenino joven: relaciones y emociones ">
-                Shojo
-              </option>
-              <option value="3" title="Audiencia adulta, temas más maduros y complejos">
-                Seinen
-              </option>
-              <option value="4" title="Manga para mujeres adultas, relaciones y vida cotidiana">
-                Josei
-              </option>
-              <option value="5" title="Ediciones especiales y manga icónico, destacados">
-                Manga Clásico
-              </option>
-              <option value="6" title="Fantasía, C. Ficción, Romance, Aventura y más">
-                Manga FCFRA
-              </option>
-            </select>
-          </div>
+          <label for="ciudad">Ciudad:</label>
+          <input
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            placeholder="Ciudad"
+            size="20"
+          />
         </div>
 
-        <p><input type="submit" /></p>
-      </form>
+        <div class="linea">
+          <label for="provincia">Provincia:</label>
+          <input
+            type="text"
+            name="provincia"
+            id="provincia"
+            placeholder="Provincia"
+          />
+        </div>
+
+        <div class="linea">
+          <label for="pais">País:</label>
+          <input type="text" name="pais" id="pais" placeholder="País" />
+        </div>
+
+        <div class="linea">
+          <label for="codpos">Código Postal:</label>
+          <input
+            type="number"
+            name="codpos"
+            id="codpos"
+            placeholder="Cod. Post."
+            min="1000"
+            required
+          />
+        </div>
+
+        <div class="linea">
+          <label for="tel">Teléfono:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Teléfono"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="formato: 000-000-0000"
+          />
+        </div>
+
+        <div class="linea">
+          <label for="prefer">Preferencia temática:</label>
+          <select name="prefer" id="prefer" title="Temática">
+            <option value="">--Por favor elija una opción--</option>
+            <option
+              value="1"
+              title="Manga para publico masculino joven: acción, aventura, amistad."
+            >
+              Shonen
+            </option>
+            <option
+              value="2"
+              title="Manga para público femenino joven: relaciones y emociones "
+            >
+              Shojo
+            </option>
+            <option
+              value="3"
+              title="Audiencia adulta, temas más maduros y complejos"
+            >
+              Seinen
+            </option>
+            <option
+              value="4"
+              title="Manga para mujeres adultas, relaciones y vida cotidiana"
+            >
+              Josei
+            </option>
+            <option
+              value="5"
+              title="Ediciones especiales y manga icónico, destacados"
+            >
+              Manga Clásico
+            </option>
+            <option
+              value="6"
+              title="Fantasía, C. Ficción, Romance, Aventura y más"
+            >
+              Manga FCFRA
+            </option>
+          </select>
+        </div>
+        <div class="botones-container">
+          <button form="registro">Enviar</button>
+        </div>
+      </form> 
+
+      
+
     </main>
 
     <footer>
       <div class="img_footer">
-        <img src="../assets/images/logo_header-1.png" style="align-content: center;" alt="Logo Estudio Aclif"
-          height="33" width="120">
+        <img
+          src="../assets/images/logo_header-1.png"
+          style="align-content: center"
+          alt="Logo Estudio Aclif"
+          height="33"
+          width="120"
+        />
       </div>
       <p>G_23</p>
-      <p>&#169 Copyright 2023 Todos los derechos reservados</p>
-      <img class="icono-footer" src="../assets/icons/social_facebook_fb_35.png">
-      <img class="icono-footer" src="../assets/icons/social_instagram_3.png">
-      <img class="icono-footer" src="../assets/icons/social_Pinterest_8 (1).png">
-      <img class="icono-footer" src="../assets/icons/sociallinkedin_member_70.png">
-
+      <p>&#169; Copyright 2023 Todos los derechos reservados</p>
+      <img
+        class="icono-footer"
+        src="../assets/icons/social_facebook_fb_35.png"
+      />
+      <img class="icono-footer" src="../assets/icons/social_instagram_3.png" />
+      <img
+        class="icono-footer"
+        src="../assets/icons/social_Pinterest_8 (1).png"
+      />
+      <img
+        class="icono-footer"
+        src="../assets/icons/sociallinkedin_member_70.png"
+      />
     </footer>
   </body>
-
 </html>
