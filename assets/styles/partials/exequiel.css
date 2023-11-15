@@ -2,38 +2,51 @@ body {
     margin: 0;
     font-family: "poppins", sans-serif;
   }
-  header {
-   
-    background-color: rgb(252, 150, 113); /* Puedes ajustar el color de fondo según tus preferencias */
-    color: rgb(53, 50, 50);
-    padding: 10px 20px;
-    justify-content: space-between;
-    display: flex;
+  .head-menu {
+    background: #ffb797;
+    color: #fff;
+    height: 130px;
+    }
+    
+    .logo {
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: #fff;
     align-items: center;
-  }
-  
-  .logo img {
-    max-width: 150px; /* Ajusta el tamaño máximo del logo según sea necesario */
-  }
-  
-  
-nav ul {
-    list-style: none;
+    }
+    
+    .txt-nav {
     display: flex;
-}
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    }
 
-nav li {
-    margin-right: 20px;
-}
-  nav a{
-    color: rgb(78, 78, 78);
-    text-decoration: none;
-    padding: 5px;
-  }  
-  nav a:hover {
-   cursor: pointer;
-   color: rgb(236, 235, 234);
-  }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+    }
+    .menu >a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    width: 80%;
+    } 
+    .menu li{
+    display:inline-flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-right: 50px;
+    padding: 10px 10px;
+    background-color:#ffb797;
+    text-align:center;
+    color:#fff;
+    }
+    .menu li:hover{
+    background-color:#8B0000;
+    color:#fff;
+    }
   
   .carrito img {
     width: 30px; /* Ajusta el tamaño del icono del carrito según sea necesario */
@@ -41,8 +54,8 @@ nav li {
   
   section {
     display: flex;
-    width:700px;
-    height: 530px;
+    width: 600px;
+    height: 600px;
     align-items: center;
     margin: 0 auto;
   }
