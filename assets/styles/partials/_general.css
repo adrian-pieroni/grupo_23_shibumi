@@ -66,12 +66,12 @@ form{
 /*Fuentes*/
 @font-face {
     font-family: Barlow-BlackItalic;
-    src: url(../../../assets/fonts/Barlow-BlackItalic.ttf);
+    src: url(../../fonts/Barlow-BlackItalic.ttf);
 }
 
 @font-face {
     font-family: Poppins-Regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
 
 
