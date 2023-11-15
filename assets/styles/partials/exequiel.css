@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: "poppins", sans-serif;
+  }
+  header {
+   
+    background-color: rgb(252, 150, 113); /* Puedes ajustar el color de fondo según tus preferencias */
+    color: rgb(53, 50, 50);
+    padding: 10px 20px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 150px; /* Ajusta el tamaño máximo del logo según sea necesario */
+  }
+  
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+  nav a{
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    padding: 5px;
+  }  
+  nav a:hover {
+   cursor: pointer;
+   color: rgb(236, 235, 234);
+  }
+  
+  .carrito img {
+    width: 30px; /* Ajusta el tamaño del icono del carrito según sea necesario */
+  }
+  
+  section {
+    display: flex;
+    width:700px;
+    height: 530px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor>div {
+    box-shadow: 0px  0px  5px  0px rgb(0, 0, 0, 0.75);
+    background-color: rgb(253, 124, 124);
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: rgb(248, 150, 30);
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.informacion>p:first-child{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 15px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 15px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: rgb(243, 189, 171);
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: lightcoral;
+}
+  
+
+footer{
+  background-color: #ffb797;
+  font-family: Barlow-BlackItalic;
+  text-align: center;
+  
+}
+
+.icono-footer {
+  width: 30px; height: 30px;
+}
+
+  .redes-sociales a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+  
+  .copyright{
+    
+    color: #faf4f4;
+    font-size: 13px;
+    margin:10px;
+     
+  }
