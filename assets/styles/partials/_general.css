@@ -63,11 +63,19 @@ form{
 }
 /*Estilos del About*/
 .about{
+    margin: 20px;
     font-family: Barlow-BlackItalic;
     text-align:left;
-    
-}
 
+}
+.texto_cuerpo{
+    font-family: Barlow-Light;
+}
+.texto_cuerpo_subrrayado{
+    font-family: Barlow-Light;
+   text-decoration: underline ;
+
+}
 
 /*Fuentes*/
 @font-face {
