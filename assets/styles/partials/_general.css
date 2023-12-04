@@ -1,60 +1,172 @@
-/*PALETA DE COLORES*/
 
-/*Estilos del <header>*/
-.head-menu {
-    background: #ffb797;
-    color: #fff;
-    height: 130px;
-    }
-    
-    .head-menu a {
-    color: white;
-    }
-    
-    .logo {
-    letter-spacing: 3px;
-    font-size: 40px;
-    color: #fff;
-    align-items: center;
-    }
-    
-    .txt-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    }
-    nav a{
-    text-decoration:none;
-    color:inherit;
-    font-size:14px;
-    width: 80%;
-    } 
-    nav li{
-    display:inline-block;
-    width:15%;
-    padding:30px 60px;
-    background-color:#ffb797;
-   
-    text-align:center;
-    color:#fff;
-    }
-    nav li:hover{
-    background-color:#8B0000;
-    color:#fff;
-    }
 
-footer{
-    background-color: #ffb797;
-    font-family: Barlow-BlackItalic;
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url(../../fonts/Barlow-Medium.ttf) format("woff");
+    
+  }
+
+@font-face {
+    font-family: "Material Symbols Outlined";
+    src: url(../../fonts/maticon/MaterialSymbolsOutlined.woff2) format("woff");
+  }
+
+
+
+
+  
+  *,
+  *::before,
+  *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+  
+  main {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 900px;
+    /* text-align: center;*/
+  }
+  
+  
+  
+  input,
+  select {
+    border-radius: 5px;
+    margin: 1px;
+    padding: 0rem;
+    font-family: "Barlow-Medium", sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  button{
+    border-radius: 5px;
+    margin: 4px;
+    padding: 0rem;
+    font-family: "Barlow-Medium", sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    
+  }
+  
+  h3 {
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+  }
+  
+  .linea {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Barlow-Medium";
+}
+  
+  .linea label {
+    display: none;
+  }
+  
+  .linea input,
+  .linea select {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .botones-container{
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+   }
+  
+  
+  .isotipo,
+  .centered-title {
+    margin: 0; 
+    color: #7d7d7d;
+    font-size: 70px;
+  }
+
+
+  section {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
-.icono-footer {
-    width: 30px; height: 30px;
+.contenedor>div {
+    box-shadow: 0px  0px  5px  0px rgb(0, 0, 0, 0.75);
+    background-color: rgb(253, 124, 124);
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: rgb(248, 150, 30);
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.informacion>p:first-child{
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 15px;
+    font-weight: 500;
 }
 
+.informacion .precio span{
+    font-size: 15px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: rgb(243, 189, 171);
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: lightcoral;
+}
+
+
+/*termina mod body*/
 
 form{
     background-color: #f0f0f0;
@@ -77,6 +189,86 @@ form{
 
 }
 
+
+
+
+@media screen and ((min-width: 321px) and (max-width: 480px)) {
+  .linea label {
+    display: flex;
+    /*flex-basis: 1.2rem;*/
+  }
+
+  .linea {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    flex: auto;
+    flex-basis: 9rem;
+    width: 100%;
+  }
+
+  .botones-container {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and ((min-width: 481px) and (max-width: 760px)) {
+  .linea label {
+    display: flex;
+    flex-basis: 9rem;
+  }
+
+  .linea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    flex: auto;
+    flex-basis: 0rem;
+  }
+
+  .botones-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: auto;
+    flex-basis: 15rem;
+  }
+}
+
+@media screen and ((min-width: 761px)) {
+  .linea label {
+    display: flex;
+    flex-basis: 9rem;
+  }
+
+  .linea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    flex: auto;
+    flex-basis: 0rem;
+  }
+
+  .botones-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: auto;
+    flex-basis: 15rem;
+  }
+}
+
+
+
+
+
 /*Fuentes*/
 @font-face {
     font-family: Barlow-BlackItalic;
@@ -86,23 +278,4 @@ form{
 @font-face {
     font-family: Poppins-Regular;
     src: url(../../assets/fonts/Poppins-Regular.ttf);
-}
-
-
-
-/*Esto debe quedar al final del .CSS*/
- /*Defino los estilos para que se adapte en cada viewport*/
-
-/*Defino los estilos para escritorio*/
-
- /*  @media screen and (min-width: 480px){
-    header{
-        background-color:;
-    }
-}
-
-@media screen and (min-width: 480px) and (orientation:landscape) {
-    header{
-        background-color:;
-    }
 }

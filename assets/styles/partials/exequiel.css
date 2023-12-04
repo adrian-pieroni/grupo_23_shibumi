@@ -2,57 +2,9 @@ body {
     margin: 0;
     font-family: "poppins", sans-serif;
   }
-  .head-menu {
-    background: #ffb797;
-    color: #fff;
-    height: 130px;
-    }
-    
-    /*.logo {
-    letter-spacing: 3px;
-    font-size: 40px;
-    color: #fff;
-    align-items: center;
-    }*/
-    
-    .txt-nav {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-between;
-    }
-
-    .menu{
-      display: flex;
-      flex-direction: row;
-      width: fit-content;
-    }
-    .menu >a{
-    text-decoration:none;
-    color:white;
-    font-size:20px;
-    width: 80%;
-    } 
-    .menu li{
-    display:inline-flex;
-    flex-direction: row;
-    width:fit-content;
-    margin-right: 50px;
-    padding: 10px 10px;
-    background-color:#ffb797;
-    text-align:center;
-    color:#fff;
-    }
-    .menu li:hover{
-    background-color:#8B0000;
-    color:#fff;
-    }
   
-  .carrito img {
-    width: 30px; /* Ajusta el tamaño del icono del carrito según sea necesario */
-  }
-  
-  section {
+    
+   section {
     display: flex;
     width: 600px;
     height: 600px;
@@ -127,33 +79,3 @@ body {
 .informacion button:hover{
     background-color: lightcoral;
 }
-  
-
-footer{
-  background-color: #ffb797;
-  font-family: Barlow-BlackItalic;
-  text-align: center;
-  
-}
-
-.icono-footer {
-  width: 30px; height: 30px;
-}
-
-  .redes-sociales a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.redes-sociales img {
-    width: 30px;
-    height: 30px;
-}
-  
-  .copyright{
-    
-    color: #faf4f4;
-    font-size: 13px;
-    margin:10px;
-     
-  }

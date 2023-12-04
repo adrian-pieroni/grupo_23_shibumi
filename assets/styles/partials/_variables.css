@@ -1,0 +1,14 @@
+:root{
+
+--head-back: #ffb797;
+--head-color: #fff;
+--hover-color: #8b0000;
+--color-prueba0: #000;
+--color-prueba1:hsl(99, 9%, 37%);
+--color-prueba2: rgb(109, 6, 11);
+--border-test0: 1px solid #000;
+--border-test1: 2px solid hsl(99, 95%, 62%);
+--border-test2: 3px solid rgb(109, 6, 11);
+--font-family1: "Barlow-Medium";
+--font-family2: "Material Symbols Outlined";
+}

@@ -1,0 +1,21 @@
+footer {
+  background-color: #ffb797;
+  font-family: Barlow-BlackItalic;
+  text-align: center;
+}
+
+.icono-footer {
+  width: 30px;
+  height: 30px;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #faf4f4;
+  font-size: 13px;
+  margin: 10px;
+}
