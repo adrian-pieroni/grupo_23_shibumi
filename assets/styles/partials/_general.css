@@ -91,10 +91,10 @@
 
   section {
     display: flex;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px 0;
   }
   
   section img {
@@ -106,7 +106,6 @@
   }
   
   section img:hover {
-    cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
