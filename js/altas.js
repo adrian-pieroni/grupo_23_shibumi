@@ -15,7 +15,7 @@ documento.addEventListener('submit', e => {
      .then(data => { // Mostrar los datos en consola
         console.log(data);
         alert('Registro agregado correctamente');
-        window.location.href = 'index.html' // Redireccionar a index.html
+        window.location.href = 'indexbe.html' // Redireccionar a index.html
     })
 
 })
