@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alta de productos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <div>
+        <a href="index.html" role="button">Volver al menu</a>
+      </div>
+
+      <br />
+      <div>
+        <h1>Modificacion de producto</h1>
+
+        <form id="formulario" method="post">
+        
+          <label for="nombre">Id</label>
+          <input type="text" name="id" id="id" required />
+
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required />
+
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" required />
+
+          <label for="edad">Edad</label>
+          <input type="date" name="edad" id="edad" required />
+
+          <label for="calle">Calle</label>
+          <input type="text" name="calle" id="calle" required />
+
+          <label for="numero">Numero</label>
+          <input type="number" name="numero" id="numero" required />
+
+          <label for="ciudad">ciudad</label>
+          <input type="text" name="ciudad" id="ciudad" required />
+
+          <label for="provincia">Provincia</label>
+          <input type="text" name="provincia" id="provincia" required />
+
+          <label for="pais">Pais</label>
+          <input type="text" name="pais" id="pais" required />
+
+          <label for="codpos">CP</label>
+          <input type="text" name="codpos" id="codpos" required />
+
+          <label for="tel">Telefono</label>
+          <input type="text" name="tel" id="tel" required />
+
+          <label for="prefer">Pref</label>
+          <input type="number" name="prefer" id="prefer" required />
+
+          <button type="submit">Enviar</button>
+          <button type="reset" class="secondary">Limpiar</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/modificar.js"></script>
+  </body>
+</html>
