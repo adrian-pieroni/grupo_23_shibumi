@@ -128,7 +128,7 @@ class Registro:
 ####################################################
 # PROGRAMA PRINCIPAL
 
-registro = Registro(host="www.educando.net.ar", user="vpvejznx_orlando", password="essolounaDBdeprueba1234", database="vpvejznx_ariatech")
+registro = Registro(Datos de acceso a base de datos)
 
 @app.route("/prueba", methods=["POST"]) #ESTO ES UN DECORADOR
 def agregar_registrado():
