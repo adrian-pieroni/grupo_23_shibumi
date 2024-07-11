@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/logo_head-1.ico" />
+    <title>Shibumi</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <!--tipografia1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--<link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />-->
+    <!--tipografia 2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <header class="nav__header">
+      <div class="nav__container">
+        <img
+          class="isotipo"
+          src="../assets/images/logo_header-1.png"
+          style="float: left"
+          alt="Shibumi"
+        />
+        <label for="checkbox" class="check__m" onclick="toggleMenu()"
+          >Menu</label
+        >
+        <label for="checkbox" class="check__c" onclick="toggleMenu()"
+          >Close</label
+        >
+        <input class="check" type="checkbox" id="checkbox" />
+        <div class="menu">
+          <a href="./index.html" class="nav__item">Home</a>
+          <a href="./pages/about.html" class="nav__item">Nosotros</a>
+          <a href="./pages/contact.html" class="nav__item">Contacto</a>
+          <a href="./pages/inscrip.html" class="nav__item">Registrese</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h3>Bienvenidos a Shibumi.</h3>
+      <p>
+        En este sitio usted podrá revisar las publicaciones disponibles y las
+        novedades que estamos recibiendo día a día. Para adquirir cualquiera de
+        estos productos, debe seguir los siguientes pasos:
+      </p>
+
+      <ul>
+        <li>Registrarse</li>
+        <li>
+          Elegir tantos productos como desee (por el momento con una lista
+          externa)
+        </li>
+        <li>Eviarnos la lista en la página de contacto, usando sus datos.</li>
+      </ul>
+      <p>
+        A vuelta de su mensaje, le enviaremos el monto de lo solicitado, y las
+        indicaciones de pago. Gracias por visitar Shibumi
+      </p>
+
+      <section>
+        <img src="./assets/images/frieren.jpg" alt="" />
+        <img src="./assets/images/imag3.jpeg" alt="" />
+        <img src="./assets/images/seinen/gantz_vol7.jpg" alt="" />
+        <img src="./assets/images/seinen/tokyo_ghoul_vol8.jpg" alt="" />
+        <img src="./assets/images/shonen/naruto-volume-7.jpg" alt="" />
+      </section>
+      <div class="contenedor" id="contenedor">
+        <div>
+          <img
+            src="./assets/images/frieren.jpg"
+            alt="Frieren tomo 1"
+            width="300"
+          />
+          <div class="informacion">
+            <p>Frieren Tomo 1</p>
+            <p class="precio">$599<span>.99</span></p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/imag3.jpeg"
+            alt="CHAINSAW MAN 01"
+            width="300"
+          />
+          <div class="informacion">
+            <p>CHAINSAW MAN 01</p>
+            <p class="precio">$599<span>.99</span></p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/shonen/jujutsu_kaisen_vol4.jpg"
+            alt="Jujutsu Kaisen 4"
+            width="300"
+          />
+          <div class="informacion">
+            <p>Jujutsu Kaisen 4</p>
+            <p class="precio">$599<span>.99</span></p>
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/shonen/naruto-volume-8.jpg"
+            alt="Naruto Vol 0"
+            width="300"
+          />
+          <div class="informacion">
+            <p>N aruto Vol 8 8</p>
+            <p class="precio">$599<span>.99</span></p>
+            <button>Comprar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="img_footer">
+        <img
+          src="./assets/images/logo_header-1.png"
+          style="align-content: center"
+          alt="Logo Estudio Aclif"
+          height="33"
+          width="120"
+        />
+      </div>
+      <p>G_23</p>
+      <p>&#169; Copyright 2023 Todos los derechos reservados</p>
+      <img
+        class="icono-footer"
+        src="./assets/icons/social_facebook_fb_35.png"
+      />
+      <img class="icono-footer" src="./assets/icons/social_instagram_3.png" />
+      <img
+        class="icono-footer"
+        src="./assets/icons/social_Pinterest_8 (1).png"
+      />
+      <img
+        class="icono-footer"
+        src="./assets/icons/sociallinkedin_member_70.png"
+      />
+    </footer>
+    <script src="./js/script_toggle.js"></script>
+  </body>
+</html>
